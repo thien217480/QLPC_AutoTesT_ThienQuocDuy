@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-07T02:17:33 ICT" name="Default suite" finished-at="2025-03-07T02:19:09 ICT" duration-ms="95187">
+    <groups>
+    </groups>
+    <test started-at="2025-03-07T02:17:33 ICT" name="Default test" finished-at="2025-03-07T02:19:09 ICT" duration-ms="95187">
+      <class name="quanlihocky.Khoa_HK">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:17:33 ICT" name="beforeTest" finished-at="2025-03-07T02:17:40 ICT" duration-ms="6904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="AuthenTk()[pri:1, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:17:40 ICT" name="AuthenTk" finished-at="2025-03-07T02:18:33 ICT" duration-ms="52688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthenTk -->
+        <test-method signature="ClickHocKy()[pri:2, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:18:33 ICT" name="ClickHocKy" finished-at="2025-03-07T02:18:55 ICT" duration-ms="22090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickHocKy -->
+        <test-method signature="TimKiemHK651()[pri:3, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:18:55 ICT" name="TimKiemHK651" finished-at="2025-03-07T02:19:05 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="9830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TimKiemHK651 -->
+        <test-method signature="KhoaHK651()[pri:4, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:19:05 ICT" name="KhoaHK651" finished-at="2025-03-07T02:19:08 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="3231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KhoaHK651 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T02:19:08 ICT" name="teardown" finished-at="2025-03-07T02:19:09 ICT" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- quanlihocky.Khoa_HK -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

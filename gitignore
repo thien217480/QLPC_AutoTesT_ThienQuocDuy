@@ -1,0 +1,48 @@
+# Eclipse-specific files
+.metadata/
+.classpath
+.project
+.settings/
+
+# Build files
+bin/
+target/
+
+# Maven dependencies
+.m2/
+
+# Gradle dependencies
+.gradle/
+build/
+
+# IDE configuration files
+*.iml
+.idea/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled class files
+*.class
+
+# JAR/WAR/EAR files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# User-specific settings
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
