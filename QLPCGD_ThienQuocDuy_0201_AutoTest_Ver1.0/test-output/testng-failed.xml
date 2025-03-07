@@ -7,7 +7,6 @@
         <methods>
           <include name="TimKiemHK651"/>
           <include name="teardown"/>
-          <include name="ClickHocKy"/>
           <include name="AuthenTk"/>
           <include name="KhoaHK651"/>
           <include name="beforeTest"/>
