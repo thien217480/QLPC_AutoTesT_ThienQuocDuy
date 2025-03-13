@@ -1,167 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-07T13:44:38 ICT" name="Default suite" finished-at="2025-03-07T13:46:18 ICT" duration-ms="100288">
+  <suite started-at="2025-03-09T10:57:53 ICT" name="Default suite" finished-at="2025-03-09T10:59:51 ICT" duration-ms="118309">
     <groups>
     </groups>
-    <test started-at="2025-03-07T13:44:38 ICT" name="Default test" finished-at="2025-03-07T13:46:18 ICT" duration-ms="100288">
+    <test started-at="2025-03-09T10:57:53 ICT" name="Default test" finished-at="2025-03-09T10:59:51 ICT" duration-ms="118309">
       <class name="quanlihocky.Khoa_HK">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:44:38 ICT" name="beforeTest" finished-at="2025-03-07T13:44:46 ICT" duration-ms="8207" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:57:53 ICT" name="beforeTest" finished-at="2025-03-09T10:57:59 ICT" duration-ms="6652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="AuthenTk()[pri:1, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:44:47 ICT" name="AuthenTk" finished-at="2025-03-07T13:45:54 ICT" duration-ms="67180" status="PASS">
+        <test-method signature="AuthenTk()[pri:1, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:57:59 ICT" name="AuthenTk" finished-at="2025-03-09T10:59:15 ICT" duration-ms="75728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthenTk -->
-        <test-method signature="ClickHocKy()[pri:2, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:45:54 ICT" name="ClickHocKy" finished-at="2025-03-07T13:46:16 ICT" duration-ms="21916" status="PASS">
+        <test-method signature="ClickHocKy()[pri:2, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:59:15 ICT" name="ClickHocKy" finished-at="2025-03-09T10:59:37 ICT" duration-ms="22251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickHocKy -->
-        <test-method signature="TimKiemHK651()[pri:3, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:46:16 ICT" name="TimKiemHK651" finished-at="2025-03-07T13:46:17 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="1204" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="menu-title text-truncate">...</span> is not clickable at point (130, 159). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
-  (Session info: chrome=133.0.6943.98)
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <span class="menu-title text-truncate">...</span> is not clickable at point (130, 159). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
-  (Session info: chrome=133.0.6943.98)
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at quanlihocky.Khoa_HK.TimKiemHK651(Khoa_HK.java:121)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="TimKiemHK651()[pri:3, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:59:37 ICT" name="TimKiemHK651" finished-at="2025-03-09T10:59:47 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="9958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TimKiemHK651 -->
-        <test-method signature="KhoaHK651()[pri:4, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:46:17 ICT" name="KhoaHK651" finished-at="2025-03-07T13:46:18 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="1198" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="checkbox" class="form-check-input user-status" aria-label="Trạng thái người dùng" onchange="editStatus('999','true')"> is not clickable at point (1304, 369). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
-  (Session info: chrome=133.0.6943.98)
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <input type="checkbox" class="form-check-input user-status" aria-label="Trạng thái người dùng" onchange="editStatus('999','true')"> is not clickable at point (1304, 369). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
-  (Session info: chrome=133.0.6943.98)
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at quanlihocky.Khoa_HK.KhoaHK651(Khoa_HK.java:142)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="KhoaHK651()[pri:4, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:59:47 ICT" name="KhoaHK651" finished-at="2025-03-09T10:59:51 ICT" depends-on-methods="quanlihocky.Khoa_HK.AuthenTk" duration-ms="3274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KhoaHK651 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-07T13:46:18 ICT" name="teardown" finished-at="2025-03-07T13:46:18 ICT" duration-ms="414" status="FAIL">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:quanlihocky.Khoa_HK@5542c4ed]" started-at="2025-03-09T10:59:51 ICT" name="teardown" finished-at="2025-03-09T10:59:51 ICT" duration-ms="334" status="FAIL">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir5300_2042848447}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:53084}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2539138ef0e0c349c3b0d525b22351c2]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+System info: host: 'DESKTOP-JCQP1JJ', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: driver.version: RemoteWebDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir1980_1322650233}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:56737}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 14aa886882b208d2541ca74bed952ae2
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=133.0.6943.141 (2a5d6da0d6165d7b107502095a937fe7704fcef6-refs/branch-heads/6943@{#1912}), userDataDir=C:\Users\ngoca\AppData\Local\Temp\scoped_dir5300_2042848447}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:53084}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=133.0.6943.98, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2539138ef0e0c349c3b0d525b22351c2
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:667)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
 at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:542)
