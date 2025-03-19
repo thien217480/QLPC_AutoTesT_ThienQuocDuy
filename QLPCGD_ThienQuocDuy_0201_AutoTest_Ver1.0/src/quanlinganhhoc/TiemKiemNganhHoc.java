@@ -1,4 +1,4 @@
-package QuanLyHocKy;
+package quanlinganhhoc;
 
 import java.util.List;
 
