@@ -54,7 +54,7 @@ public class TimKiemNguoiDung {
         ));
         
         // Nhập từ khóa tìm kiếm
-        String keyword = JOptionPane.showInputDialog("Nhập tên giảng viên hoặc mã giảng viên cần tìm:");
+        String keyword = "Lê Anh Duy"
         searchBox.clear();
         searchBox.sendKeys(keyword);
         Thread.sleep(3000); // Chờ 3 giây để dữ liệu cập nhật
