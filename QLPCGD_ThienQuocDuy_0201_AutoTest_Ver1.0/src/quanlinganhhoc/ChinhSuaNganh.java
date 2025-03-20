@@ -121,6 +121,7 @@ public class ChinhSuaNganh {
             WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Lưu')]")));
             saveButton.click();
             System.out.println("✅ Đã nhấn nút Lưu.");
+	    Thread.sleep(3000);
         }
     @AfterTest
     public void afterTest() {
