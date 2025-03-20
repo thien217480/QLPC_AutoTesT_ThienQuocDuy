@@ -57,6 +57,7 @@ public class XoaNganhHoc {
         WebElement confirmButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class, 'swal2-confirm')]")));
         confirmButton.click();
         System.out.println("✅ Đã xác nhận xóa ngành.");
+        Thread.sleep(3000)
 }
     @AfterTest
     public void afterTest() {
