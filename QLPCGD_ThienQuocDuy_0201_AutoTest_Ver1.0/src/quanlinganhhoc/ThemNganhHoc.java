@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import authen.Authen;
+import ChinhSuaHoSo.Authen;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ThemNganhHoc {
@@ -60,54 +60,42 @@ public class ThemNganhHoc {
         btnCreateNew.click();
     }
 
-    @Test(priority = 3, dependsOnMethods = "moFormSuaNganh")
+    @Test(priority = 3, dependsOnMethods = "moFormThemNganh")
     public void ThemNganh() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-1")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-1")));
+
+        // Nhập thông tin ngành học cố định
+        String id = "999999";
+        String name = "Kỹ thuật phần mềm";
+        String abbreviation = "KTPM";
+        String selectedCTDT = "Tiêu chuẩn";  // Chọn Tiêu chuẩn mặc định
 
         // Nhập mã ngành
-        String id = JOptionPane.showInputDialog("Nhập mã ngành:");
         WebElement idField = driver.findElement(By.id("id"));
         idField.clear();
         idField.sendKeys(id);
         Thread.sleep(1000);
 
         // Nhập tên ngành
-        String name = JOptionPane.showInputDialog("Nhập tên ngành:");
         WebElement nameField = driver.findElement(By.id("name"));
         nameField.clear();
         nameField.sendKeys(name);
         Thread.sleep(1000);
 
         // Nhập tên viết tắt
-        String abbreviation = JOptionPane.showInputDialog("Nhập tên viết tắt:");
         WebElement abbreviationField = driver.findElement(By.id("abbreviation"));
         abbreviationField.clear();
         abbreviationField.sendKeys(abbreviation);
         Thread.sleep(1000);
         
-     // Chọn CTDT
-        String[] ctdtOptions = {"---- Chọn CTDT ----", "Tiêu chuẩn", "Đặc biệt"};
-        String selectedCTDT = (String) JOptionPane.showInputDialog(
-            null, 
-            "Chọn chương trình đào tạo:", 
-            "Cập nhật CTDT", 
-            JOptionPane.QUESTION_MESSAGE, 
-            null, 
-            ctdtOptions, 
-            ctdtOptions[0]
-        );
-        // Click vào Select2 để mở danh sách chọn
-        WebElement select2Container = wait.until(ExpectedConditions.elementToBeClickable(
-            By.xpath("//span[@id='select2-program_type-container']")
-        ));
+        // Chọn CTDT
+        WebElement select2Container = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@id='select2-program_type-container']")));
         select2Container.click();
         Thread.sleep(1000);
 
         // Chọn giá trị từ danh sách dựa trên lựa chọn
-        WebElement option = wait.until(ExpectedConditions.elementToBeClickable(
-            By.xpath("//li[contains(text(),'" + selectedCTDT + "')]")
-        ));
+        WebElement option = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[contains(text(),'" + selectedCTDT + "')]")));
         option.click();
         Thread.sleep(2000);
         
@@ -115,13 +103,11 @@ public class ThemNganhHoc {
         WebElement saveButton = driver.findElement(By.xpath("//button[contains(text(),'Lưu')]"));
         saveButton.click();
         Thread.sleep(3000);
-        
-        
-        
+  
     }
-    
     @AfterTest
     public void afterTest() {
         driver.quit();
     }
 }
+
