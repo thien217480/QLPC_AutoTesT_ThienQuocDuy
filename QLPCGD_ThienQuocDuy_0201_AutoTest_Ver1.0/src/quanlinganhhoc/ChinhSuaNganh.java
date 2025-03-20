@@ -93,42 +93,40 @@ public class ChinhSuaNganh {
     public void SuaThongTinNganh() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        // Nhập "Tên ngành" từ JOptionPane
-        String tenNganh = JOptionPane.showInputDialog("Nhập Tên Ngành:");
-        WebElement nameField = wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
-        nameField.clear();
-        nameField.sendKeys(tenNganh);
-        System.out.println("✅ Đã nhập Tên ngành: " + tenNganh);
-        Thread.sleep(2000);
+            // Nhập "Tên ngành" mới
+            String tenNganh = "Công nghệ thông tin";
+            WebElement nameField = wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
+            nameField.clear();
+            nameField.sendKeys(tenNganh);
+            System.out.println("✅ Đã nhập Tên ngành: " + tenNganh);
+            Thread.sleep(2000);
 
-        // Nhập "Tên viết tắt" từ JOptionPane
-        String tenVietTat = JOptionPane.showInputDialog("Nhập Tên Viết Tắt:");
-        WebElement abbreviationField = wait.until(ExpectedConditions.elementToBeClickable(By.id("abbreviation")));
-        abbreviationField.clear();
-        abbreviationField.sendKeys(tenVietTat);
-        System.out.println("✅ Đã nhập Tên viết tắt: " + tenVietTat);
-        Thread.sleep(2000);
+            // Nhập "Tên viết tắt" mới
+            String tenVietTat = "CNTT";
+            WebElement abbreviationField = wait.until(ExpectedConditions.elementToBeClickable(By.id("abbreviation")));
+            abbreviationField.clear();
+            abbreviationField.sendKeys(tenVietTat);
+            System.out.println("✅ Đã nhập Tên viết tắt: " + tenVietTat);
+            Thread.sleep(2000);
 
-        // Chọn "CTĐT" từ JOptionPane
-        String[] options = {"Tiêu chuẩn", "Đặc biệt"};
-        int selectedOption = JOptionPane.showOptionDialog(null, "Chọn CTĐT:", "Lựa chọn CTĐT",
-                JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-        String programValue = (selectedOption == 1) ? "1" : "0";
+            // Chọn "CTĐT" (Tiêu chuẩn = 0, Đặc biệt = 1)
+            String programValue = "0"; // Giá trị mặc định là "Tiêu chuẩn"
+            WebElement programTypeDropdown = wait.until(ExpectedConditions.elementToBeClickable(By.id("program_type")));
+            Select select = new Select(programTypeDropdown);
+            select.selectByValue(programValue);
+            System.out.println("✅ Đã chọn CTĐT: Tiêu chuẩn");
+            Thread.sleep(2000);
 
-        WebElement programTypeDropdown = wait.until(ExpectedConditions.elementToBeClickable(By.id("program_type")));
-        Select select = new Select(programTypeDropdown);
-        select.selectByValue(programValue);
-        System.out.println("✅ Đã chọn CTĐT: " + options[selectedOption]);
-        Thread.sleep(2000);
-
-        // Nhấn nút "Lưu"
-        WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Lưu')]")));
-        saveButton.click();
-        System.out.println("✅ Đã nhấn nút Lưu.");
-    }
+            // Nhấn nút "Lưu"
+            WebElement saveButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Lưu')]")));
+            saveButton.click();
+            System.out.println("✅ Đã nhấn nút Lưu.");
+        }
     @AfterTest
     public void afterTest() {
   	  driver.close();
     }
 }
+
+
 
