@@ -14,6 +14,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+/*
+* Sumary: .....
+* Author: .....
+* Date: .....
 public class CapNhatHoSo {
     private final String baseUrl = "https://cntttest.vanlanguni.edu.vn:18081/Phancong02/Account/Login";
     private WebDriver driver;
