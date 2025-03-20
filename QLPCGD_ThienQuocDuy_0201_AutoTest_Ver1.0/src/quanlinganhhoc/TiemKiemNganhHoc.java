@@ -57,30 +57,28 @@ public class TiemKiemNganhHoc {
         // Tìm ô nhập tìm kiếm bằng XPath hoặc CSS Selector
         WebElement searchBox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='search' and @aria-controls='tblMajor']")));
 
-        // Hiển thị hộp thoại nhập từ khóa tìm kiếm
-        String keyword = JOptionPane.showInputDialog("Nhập tên ngành học cần tìm:");
+        // Đặt từ khóa tìm kiếm cố định là "CNTT"
+        String keyword = "CNTT";
+        searchBox.clear();
+        searchBox.sendKeys(keyword);
+        System.out.println("🔍 Đã nhập từ khóa tìm kiếm: " + keyword);
+        Thread.sleep(2000);
 
-        if (keyword != null && !keyword.trim().isEmpty()) {
-            // Nhập từ khóa vào ô tìm kiếm
-            searchBox.sendKeys(keyword);
-            System.out.println("🔍 Đã nhập từ khóa tìm kiếm: " + keyword);
-            Thread.sleep(2000);
+        // Chờ kết quả hiển thị
+        List<WebElement> searchResults = driver.findElements(By.xpath("//table[@id='tblMajor']//tbody/tr"));
 
-            // Chờ kết quả hiển thị
-            List<WebElement> searchResults = driver.findElements(By.xpath("//table[@id='tblMajor']//tbody/tr"));
-
-            if (!searchResults.isEmpty()) {
-                System.out.println("✅ Kết quả tìm kiếm:");
-                for (WebElement row : searchResults) {
-                    System.out.println("📌 " + row.getText());
-                }
-            } else {
-                System.out.println("❌ Không tìm thấy ngành học nào phù hợp.");
+        if (!searchResults.isEmpty()) {
+            System.out.println("✅ Kết quả tìm kiếm:");
+            for (WebElement row : searchResults) {
+                System.out.println("📌 " + row.getText());
             }
         } else {
-            System.out.println("⚠️ Không nhập từ khóa, hủy tìm kiếm.");
+            System.out.println("❌ Không tìm thấy ngành học nào phù hợp.");
         }
     }
-
-    
+        @AfterTest
+    public void afterTest() {
+        driver.quit();
+    }
 }
+
